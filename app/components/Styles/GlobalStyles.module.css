@@ -96,3 +96,53 @@
   border-radius: 20px;
   border: 2px solid #e0e1dd;
 }
+
+.socialMediaIcon {
+  font-size: 50px !important;
+  transition: color 0.3s, font-size 0.3s;
+  border-radius: 17px;
+  border: 2px solid;
+  padding: 7px;
+}
+
+.socialMediaIcon:hover {
+  font-size: 60px !important;
+  padding: 7px;
+}
+
+/* For small screens (up to 320px) */
+@media (max-width: 320px) {
+}
+
+/* For small screens (up to 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+}
+
+/* For small screens (up to 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+}
+
+/* For medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+}
+
+/* For large screens (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+}
+
+/* For extra large screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 2559px) {
+}
+
+/* For very large screens (2560px and above) */
+@media (min-width: 2560px) {
+  .socialMediaIcon {
+    font-size: 100px !important;
+    padding: 10px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 120px !important;
+    padding: 7px;
+  }
+}

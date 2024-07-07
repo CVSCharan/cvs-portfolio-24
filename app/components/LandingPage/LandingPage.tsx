@@ -4,17 +4,32 @@ import landingPageStyle from "./LandingPage.module.css";
 import globalStyles from "../Styles/GlobalStyles.module.css";
 import { ThemeContext } from "@/app/context/Theme";
 import Image from "next/image";
+import SocialMediaIcon from "../SocialMediaIcons/SocilaMediaIcons";
+import { motion } from "framer-motion";
+import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import QRCode from "qrcode-generator";
+import Axios from "axios";
+import FileDownload from "js-file-download";
+import { notification } from "antd";
 
 const LandingPage: React.FC = () => {
   const [typedText, setTypedText] = useState<string>("");
+  const resumeURL = "https://cvs-charan-resume.tiiny.site/";
   const fullText = ["CVS CHARAN"];
+  const [qrCodeSVG, setQrCodeSVG] = useState("");
   const typingSpeed = 170; // Speed of typing and deletion
   const delayBeforeDeletion = 3700; // Delay before deletion starts
   const delayBeforeRestart = 2700; // Delay before restart
 
+  const Ref1 = useRef<HTMLHeadingElement | null>(null);
+  const Ref2 = useRef<HTMLHeadingElement | null>(null);
   const Ref3 = useRef<HTMLHeadingElement | null>(null);
   const Ref4 = useRef<HTMLHeadingElement | null>(null);
   const intervalRef = useRef<number | null>(null);
+
+  const themeContext = useContext(ThemeContext);
+
+  const themeColor = themeContext?.themeColor;
 
   useEffect(() => {
     const animateCardContentsRight = (
@@ -57,6 +72,8 @@ const LandingPage: React.FC = () => {
 
     animateCardContentsRight(Ref4);
     animateCardContentsTop(Ref3);
+    animateCardContentsRight(Ref1);
+    animateCardContentsRight(Ref2);
   }, []);
 
   useEffect(() => {
@@ -106,14 +123,40 @@ const LandingPage: React.FC = () => {
     };
   }, []);
 
-  const themeContext = useContext(ThemeContext);
+  useEffect(() => {
+    if (!themeColor) return;
+
+    const qr = QRCode(0, "L");
+    qr.addData(resumeURL);
+    qr.make();
+    const svg = qr.createSvgTag({ cellSize: 3.5 });
+    const modifiedSvg =
+      themeColor === "dark"
+        ? svg.replace("<path", '<path fill="#01d293"')
+        : svg.replace("<path", '<path fill="#74bdcb"');
+    setQrCodeSVG(modifiedSvg);
+  }, [themeColor]);
+
+  const download = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    Axios({
+      url: "https://my-portfolio-24-server-2cf37196a6ea.herokuapp.com/resume-service",
+      method: "GET",
+      responseType: "blob",
+    }).then((response) => {
+      console.log(response);
+      FileDownload(response.data, "Charan_Resume.pdf");
+      notification.success({
+        message: "Success",
+        description: "Resume Downloaded",
+        placement: "bottomRight",
+      });
+    });
+  };
 
   if (!themeContext) {
-    console.info("useContext must be used within a ThemeProvider");
     return null;
   }
-
-  const { themeColor } = themeContext;
 
   const finalHeaderTextSpan =
     themeColor === "light"
@@ -139,6 +182,21 @@ const LandingPage: React.FC = () => {
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtThree} ${landingPageStyle.paraTxt}`
       : `${globalStyles.darkThemeTxtThree} ${landingPageStyle.paraTxt}`;
+
+  const finalQr =
+    themeColor === "light"
+      ? `${globalStyles.lightThemeTxtOne} ${landingPageStyle.qrDiv}`
+      : `${globalStyles.darkThemeTxtOne} ${landingPageStyle.qrDiv}`;
+
+  const finalResumeBtn =
+    themeColor === "light"
+      ? `${globalStyles.lightThemeTxtOne} ${landingPageStyle.resumeBtn}`
+      : `${globalStyles.darkThemeTxtOne} ${landingPageStyle.resumeBtn}`;
+
+  const finalStayConnected =
+    themeColor === "light"
+      ? `${globalStyles.lightThemeTxtOne} ${landingPageStyle.stayConnected}`
+      : `${globalStyles.darkThemeTxtOne} ${landingPageStyle.stayConnected}`;
 
   return (
     <div className={landingPageStyle.mainDiv}>
@@ -188,6 +246,43 @@ const LandingPage: React.FC = () => {
             src="/assets/Images/profile-pic.png"
             alt="profile pic"
           />
+        </div>
+      </div>
+      <div className={landingPageStyle.sectionTwo}>
+        <div ref={Ref1} className={landingPageStyle.sectionTwoFirstDiv}>
+          <div
+            ref={Ref1}
+            className={finalQr}
+            dangerouslySetInnerHTML={{ __html: qrCodeSVG }}
+          />
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={download}
+            className={finalResumeBtn}
+          >
+            RESUME
+            <FileDownloadOutlinedIcon className="home-resume-download-icon" />
+          </motion.button>
+        </div>
+        <div ref={Ref2} className={landingPageStyle.sectionTwoSecondDiv}>
+          <h2 className={finalStayConnected}>Stay Connected</h2>
+          <div className={landingPageStyle.sectionTwoSecondDivSubFirstDiv}>
+            <SocialMediaIcon
+              icon="github"
+              href="https://github.com/CVSCharan"
+            />
+            <SocialMediaIcon
+              icon="linkedin"
+              href="https://www.linkedin.com/in/charan-cvs/"
+            />
+            <SocialMediaIcon
+              icon="whatsapp"
+              href="https://wa.me/7337525111?text=Hey CVS!"
+            />
+            {/* <SocialMediaIcon icon="discord" href="https://discord.gg/cf7fYHa4" /> */}
+            {/* <SocialMediaIcon icon="youtube" href="" /> */}
+          </div>
         </div>
       </div>
     </div>
