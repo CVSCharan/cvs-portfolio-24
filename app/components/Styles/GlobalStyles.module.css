@@ -1,0 +1,98 @@
+/* GlobalStyles.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.lightTheme {
+  background-color: #f3fbfc;
+}
+
+.darkTheme {
+  background-color: #171f38;
+}
+
+.lightThemeTxt {
+  color: #74bdcb;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxt {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeTxtOne {
+  color: #035295;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxtOne {
+  color: #01d293;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeTxtTwo {
+  color: #74bdcb;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxtTwo {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeTxtTwo:hover {
+  color: #035295;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxtTwo:hover {
+  color: #01d293;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeTxtThree {
+  color: #74bdcb;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxtThree {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeTxtFour {
+  color: black;
+  font-family: "Quicksand", sans-serif;
+}
+
+.darkThemeTxtFour {
+  color: grey;
+  font-family: "Quicksand", sans-serif;
+}
+
+.lightThemeScrollbar::-webkit-scrollbar {
+  width: 11px;
+}
+
+.lightThemeScrollbar::-webkit-scrollbar-track {
+  background: #f3fbfc;
+}
+
+.lightThemeScrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0c0d6;
+  border-radius: 20px;
+  border: 2px solid #171f38;
+}
+
+.darkThemeScrollbar::-webkit-scrollbar {
+  width: 9px;
+}
+
+.darkThemeScrollbar::-webkit-scrollbar-track {
+  background: #171f38;
+}
+
+.darkThemeScrollbar::-webkit-scrollbar-thumb {
+  background-color: #01d293;
+  border-radius: 20px;
+  border: 2px solid #e0e1dd;
+}
