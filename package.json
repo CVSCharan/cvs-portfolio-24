@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.21",
     "antd": "^5.19.1",
     "axios": "^1.7.2",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.2.13",
     "js-file-download": "^0.4.12",
     "next": "^14.2.4",

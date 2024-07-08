@@ -110,28 +110,94 @@
   padding: 7px;
 }
 
+.lightThemeInput {
+  color: #035295;
+  font-family: "Quicksand", sans-serif;
+  padding: 7px;
+}
+
+.darkThemeInput {
+  color: #01d293;
+  font-family: "Quicksand", sans-serif;
+  padding: 7px;
+}
+
 /* For small screens (up to 320px) */
 @media (max-width: 320px) {
+  .socialMediaIcon {
+    font-size: 30px !important;
+    padding: 7px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 40px !important;
+    padding: 7px;
+  }
 }
 
 /* For small screens (up to 375px) */
 @media (min-width: 321px) and (max-width: 375px) {
+  .socialMediaIcon {
+    font-size: 30px !important;
+    padding: 7px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 40px !important;
+    padding: 7px;
+  }
 }
 
 /* For small screens (up to 600px) */
 @media (min-width: 376px) and (max-width: 600px) {
+  .socialMediaIcon {
+    font-size: 40px !important;
+    padding: 7px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 50px !important;
+    padding: 7px;
+  }
 }
 
 /* For medium screens (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
+  .socialMediaIcon {
+    font-size: 50px !important;
+    padding: 7px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 60px !important;
+    padding: 7px;
+  }
 }
 
 /* For large screens (901px to 1200px) */
 @media (min-width: 901px) and (max-width: 1200px) {
+  .socialMediaIcon {
+    font-size: 40px !important;
+    padding: 7px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 50px !important;
+    padding: 7px;
+  }
 }
 
 /* For extra large screens (1201px and above) */
 @media (min-width: 1201px) and (max-width: 2559px) {
+  .socialMediaIcon {
+    font-size: 50px !important;
+    padding: 10px;
+  }
+
+  .socialMediaIcon:hover {
+    font-size: 60px !important;
+    padding: 7px;
+  }
 }
 
 /* For very large screens (2560px and above) */

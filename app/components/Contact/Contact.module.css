@@ -1,0 +1,617 @@
+.mainDiv {
+  height: 90vh;
+  width: 100vw;
+  padding: 20px 20px;
+}
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subContainerOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 47%;
+}
+
+.subContainerTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 47%;
+  padding: 10px;
+}
+
+.contactMeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contactMeHeaderContainer {
+  align-self: flex-start;
+}
+
+.contactMeContainerOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 87%;
+  width: 90%;
+  padding: 10px;
+}
+
+.contactMeContainerOneContents {
+  height: 20%;
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contactMeHeaderTxt {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contactMeHeaderTxtSpan {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contactMeSubHeading {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.contactMeContainerOneTextareaContents {
+  height: 30%;
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contactMeContainerOneBtnContents {
+  height: 12%;
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.contactMeInput {
+  font-weight: 800;
+  font-size: 15px;
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 7px;
+  width: 77%;
+  background-color: transparent;
+}
+
+.contactMeInput:focus {
+  outline: none !important;
+}
+
+.contactSubContainerOneCard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactMeBtn {
+  align-self: flex-end;
+  height: 30px;
+  width: 120px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1.5px solid;
+  cursor: pointer;
+}
+
+.contactMeBtn:hover {
+  align-self: flex-end;
+  height: 30px;
+  width: 120px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1.5px solid;
+}
+
+.contactSubContainerOneCardContents {
+  height: 30%;
+  width: 60%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-radius: 2%;
+}
+
+.contactSubContainerOneCardContentsTxtOne {
+  font-size: 17px;
+}
+
+.contactSubContainerOneCardContentsTxtTwo {
+  font-size: 14px;
+}
+
+/* For small screens (up to 320px) */
+@media (max-width: 320px) {
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .subContainerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+  }
+
+  .subContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contactSubContainerOneCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactSubContainerOneCardContents {
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .contactMeHeaderTxt {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 18px;
+  }
+
+  .contactLabels {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+
+/* For small screens (up to 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .subContainerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+  }
+
+  .subContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contactSubContainerOneCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactSubContainerOneCardContents {
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .contactMeHeaderTxt {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 18px;
+  }
+
+  .contactLabels {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+
+/* For small screens (up to 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .subContainerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+  }
+
+  .subContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contactSubContainerOneCard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactSubContainerOneCardContents {
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .contactMeHeaderTxt {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 18px;
+  }
+
+  .contactLabels {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+
+/* For medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .contactMeHeaderTxt {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 22px;
+  }
+
+  .contactLabels {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+
+/* For large screens (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .contactMeHeaderTxt {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 25px;
+  }
+
+  .contactLabels {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+/* For extra large screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 2559px) {
+  .contactMeHeaderTxt {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 25px;
+  }
+
+  .contactLabels {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 30px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .contactMeBtn:hover {
+    height: 30px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 19px;
+  }
+}
+
+/* For very large screens (2560px and above) */
+@media (min-width: 2560px) {
+  .contactMeHeaderTxt {
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .contactMeHeaderTxtSpan {
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtOne {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .contactSubContainerOneCardContentsTxtTwo {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .icons {
+    font-size: 60px;
+  }
+
+  .contactLabels {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .contactMeBtn {
+    height: 60px;
+    width: 320px;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .contactMeBtn:hover {
+    height: 60px;
+    width: 320px;
+    font-weight: 600;
+    font-size: 38px;
+  }
+}

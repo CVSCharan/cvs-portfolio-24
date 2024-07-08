@@ -75,11 +75,11 @@ const Header = () => {
             <a className={finalHeaderAnchorText} href="#home">
               Home
             </a>
-            <a className={finalHeaderAnchorText} href="#projects">
-              Projects
-            </a>
             <a className={finalHeaderAnchorText} href="#about">
               About
+            </a>
+            <a className={finalHeaderAnchorText} href="#projects">
+              Projects
             </a>
             <a className={finalHeaderAnchorText} href="#contact">
               Contact
@@ -89,11 +89,11 @@ const Header = () => {
             <a className="header-icon" href="#home">
               <HomeIcon className={finalHeaderIcon} />
             </a>
-            <a className="header-icon" href="#projects">
-              <LayersIcon className={finalHeaderIcon} />
-            </a>
             <a className="header-icon" href="#about">
               <PersonIcon className={finalHeaderIcon} />
+            </a>
+            <a className="header-icon" href="#projects">
+              <LayersIcon className={finalHeaderIcon} />
             </a>
             <a className="header-icon" href="#contact">
               <ContactPageIcon className={finalHeaderIcon} />
