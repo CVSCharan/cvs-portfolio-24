@@ -1,0 +1,63 @@
+.footer {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerTxt {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* For small screens (up to 320px) */
+@media (max-width: 320px) {
+}
+.footerTxt {
+  font-size: 11px;
+}
+
+/* For small screens (up to 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+  .footerTxt {
+    font-size: 11px;
+  }
+}
+
+/* For small screens (up to 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+  .footerTxt {
+    font-size: 13px;
+  }
+}
+
+/* For medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .footerTxt {
+    font-size: 15px;
+  }
+}
+
+/* For large screens (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .footerTxt {
+    font-size: 17px;
+  }
+}
+
+/* For extra large screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 2559px) {
+  .footerTxt {
+    font-size: 18px;
+  }
+}
+
+/* For very large screens (2560px and above) */
+@media (min-width: 2560px) {
+  .footerTxt {
+    font-size: 38px;
+  }
+}

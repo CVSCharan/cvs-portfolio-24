@@ -8,13 +8,13 @@
 }
 
 .headerLogo {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   letter-spacing: 1.5px;
 }
 
 .headerLogoSpan {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 30px;
   letter-spacing: 1.5px;
 }
@@ -42,7 +42,7 @@
 
 .headerSecondDiv {
   height: 100%;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -66,7 +66,7 @@
 
 .headerMenuItems {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1.5;
   transition: color 0.3s, font-size 0.3s;
 }

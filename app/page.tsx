@@ -9,6 +9,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   const themeContext = useContext(ThemeContext);
@@ -58,6 +59,9 @@ export default function Home() {
         </div>
         <div id="contact">
           <Contact />
+        </div>
+        <div className={styles.footerDiv}>
+          <Footer />
         </div>
       </div>
     </main>
