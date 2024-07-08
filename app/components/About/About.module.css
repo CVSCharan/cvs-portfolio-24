@@ -1,0 +1,405 @@
+.mainDiv {
+  height: 90vh;
+  width: 100vw;
+  padding: 20px 20px;
+}
+
+.aboutMainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.aboutSubHeaderMain {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutSubContainerOne {
+  height: 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutHeaderTextTwo {
+  font-size: 20px;
+}
+
+.aboutExpRole {
+  font-size: 16px;
+}
+
+.aboutCertificateIcon {
+  height: 45px;
+  width: 45px;
+}
+
+.aboutSubHeader {
+  height: 70%;
+  width: 50% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 70px;
+  border: 2px solid;
+}
+
+.aboutSubHeaderItems {
+  background-color: transparent;
+  border: 0;
+  font-size: 19px;
+  font-weight: 350;
+  cursor: pointer;
+}
+
+.aboutSubHeaderMain {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutSubContainerTwo {
+  height: 77%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSubContainerThree {
+  height: 77%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSubContainerFour {
+  height: 77%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutExperienceCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 7px;
+}
+
+.aboutEducationCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 80%;
+}
+
+.aboutExperienceCardsSubContainer {
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1.5px solid;
+  width: 31%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-size: cover;
+  padding: 0 15px;
+}
+
+.aboutExperienceCardsSubContainerContents {
+  display: flex;
+  flex-direction: row;
+  height: 35%;
+  width: 95%;
+  gap: 10px;
+}
+
+.aboutCertificatesMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77%;
+  width: 100%;
+}
+
+.aboutSubContainerThree {
+  height: 72%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSubContainerFour {
+  height: 72%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutExperienceCardsSubContainer {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+
+.aboutExperienceCardsSubContainerContentOne {
+  width: 17%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutCertificatesCardsSubContainerContentOne {
+  width: 47%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutEducationCardsSubContainerContentOne {
+  width: 17%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutExperienceCardsSubContainerContentTwo {
+  height: 100%;
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.aboutCertificatesCardsSubContainerContentTwo {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.aboutEducationCardsSubContainerContentTwo {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 12px;
+  margin-left: 17px;
+}
+
+.aboutCertCredMainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutEducationCardsSubContainerContentOne {
+  width: 17%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutEducationCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 80%;
+}
+
+.aboutEducationCardsSubContainer {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1.5px solid;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 32%;
+  background-size: cover;
+  padding: 0 17px;
+}
+
+.aboutCertificatesCardsSubContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1.5px solid;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 25px;
+}
+
+.paginationBtn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.aboutCertificatesPaginationIconActive {
+  font-size: 17px !important;
+}
+
+.aboutCertificatesPaginationIcon {
+  font-size: 15px !important;
+}
+
+.aboutCertificateLinkIcon {
+  height: 15px;
+  width: 15px;
+}
+
+.aboutCertCredContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.aboutExperienceIcon {
+  height: 55px;
+  width: 55px;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: white;
+}
+
+.aboutEducationIcon {
+  height: 55px;
+  width: 55px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.about-certificate-icon {
+  height: 45px;
+  width: 45px;
+}
+
+.aboutCertificateImg {
+  height: 250px;
+  width: 450px;
+}
+
+.aboutEducationCardsSubMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutCertCredMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.aboutEduOrg {
+  font-size: 14px;
+}
+
+.aboutExpDesc {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  height: 40%;
+  width: 100%;
+  letter-spacing: 1.2px;
+}
+
+.aboutExpLocation {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutCertName {
+  font-size: 14px;
+}
+
+.aboutExpOrg {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutCertInstitution {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutEduDegree {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutExpJoinedOn {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: 1.2px;
+}
+
+.aboutExpDesc {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: justify;
+  height: 30%;
+  width: 92%;
+}
+
+.aboutEduDuration {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutCertIssuedOn {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutEduGrade {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aboutCertCred {
+  font-size: 12px;
+  font-weight: 800;
+}

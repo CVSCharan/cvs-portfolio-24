@@ -11,7 +11,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import emailjs from "emailjs-com";
 import globalStyles from "../Styles/GlobalStyles.module.css";
-import contactStyle from "./Contact.module.css";
+import contactStyles from "./Contact.module.css";
 
 const Contact: React.FC = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -123,50 +123,50 @@ const Contact: React.FC = () => {
 
   const finalContactMeHeaderText =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtTwo} ${contactStyle.contactMeHeaderTxt}`
-      : `${globalStyles.darkThemeTxtTwo} ${contactStyle.contactMeHeaderTxt}`;
+      ? `${globalStyles.lightThemeTxtTwo} ${contactStyles.contactMeHeaderTxt}`
+      : `${globalStyles.darkThemeTxtTwo} ${contactStyles.contactMeHeaderTxt}`;
   const finalContactMeHeaderTextSpan =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtOne} ${contactStyle.contactMeHeaderTxtSpan}`
-      : `${globalStyles.darkThemeTxtOne} ${contactStyle.contactMeHeaderTxtSpan}`;
+      ? `${globalStyles.lightThemeTxtOne} ${contactStyles.contactMeHeaderTxtSpan}`
+      : `${globalStyles.darkThemeTxtOne} ${contactStyles.contactMeHeaderTxtSpan}`;
   const finalContactMeSubHeading =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtTwo} ${contactStyle.contactMeSubHeading}`
-      : `${globalStyles.darkThemeTxtTwo} ${contactStyle.contactMeSubHeading}`;
+      ? `${globalStyles.lightThemeTxtTwo} ${contactStyles.contactMeSubHeading}`
+      : `${globalStyles.darkThemeTxtTwo} ${contactStyles.contactMeSubHeading}`;
   const finalContactMeInput =
     themeColor === "light"
-      ? `${globalStyles.lightThemeInput} ${contactStyle.contactMeInput}`
-      : `${globalStyles.darkThemeInput} ${contactStyle.contactMeInput}`;
+      ? `${globalStyles.lightThemeInput} ${contactStyles.contactMeInput}`
+      : `${globalStyles.darkThemeInput} ${contactStyles.contactMeInput}`;
   const finalContactMeBtn =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtOne} ${contactStyle.contactMeBtn}`
-      : `${globalStyles.darkThemeTxtOne} ${contactStyle.contactMeBtn}`;
+      ? `${globalStyles.lightThemeTxtOne} ${contactStyles.contactMeBtn}`
+      : `${globalStyles.darkThemeTxtOne} ${contactStyles.contactMeBtn}`;
   const finalContactCardContents =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtOne} ${contactStyle.contactSubContainerOneCardContents}`
-      : `${globalStyles.darkThemeTxtOne} ${contactStyle.contactSubContainerOneCardContents}`;
+      ? `${globalStyles.lightThemeTxtOne} ${contactStyles.contactSubContainerOneCardContents}`
+      : `${globalStyles.darkThemeTxtOne} ${contactStyles.contactSubContainerOneCardContents}`;
   const finalContactCardContentsTxt1 =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtOne} ${contactStyle.contactSubContainerOneCardContentsTxtOne}`
-      : `${globalStyles.darkThemeTxtOne} ${contactStyle.contactSubContainerOneCardContentsTxtOne}`;
+      ? `${globalStyles.lightThemeTxtOne} ${contactStyles.contactSubContainerOneCardContentsTxtOne}`
+      : `${globalStyles.darkThemeTxtOne} ${contactStyles.contactSubContainerOneCardContentsTxtOne}`;
   const finalContactCardContentsTxt2 =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtTree} ${contactStyle.contactSubContainerOneCardContentsTxtTwo}`
-      : `${globalStyles.darkThemeTxtThree} ${contactStyle.contactSubContainerOneCardContentsTxtTwo}`;
+      ? `${globalStyles.lightThemeTxtTree} ${contactStyles.contactSubContainerOneCardContentsTxtTwo}`
+      : `${globalStyles.darkThemeTxtThree} ${contactStyles.contactSubContainerOneCardContentsTxtTwo}`;
   const finalContactIcons =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtFour} ${contactStyle.icons}`
-      : `${globalStyles.darkThemeTxtFour} ${contactStyle.icons}`;
+      ? `${globalStyles.lightThemeTxtFour} ${contactStyles.icons}`
+      : `${globalStyles.darkThemeTxtFour} ${contactStyles.icons}`;
   const finalContactLabel =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtFour} ${contactStyle.contactLabels}`
-      : `${globalStyles.darkThemeTxtFour} ${contactStyle.contactLabels}`;
+      ? `${globalStyles.lightThemeTxtFour} ${contactStyles.contactLabels}`
+      : `${globalStyles.darkThemeTxtFour} ${contactStyles.contactLabels}`;
 
   return (
-    <div id="contact" className={contactStyle.mainDiv}>
-      <div className={contactStyle.mainContainer}>
-        <div className={contactStyle.subContainerOne}>
-          <div className={contactStyle.contactSubContainerOneCard}>
+    <div id="contact" className={contactStyles.mainDiv}>
+      <div className={contactStyles.mainContainer}>
+        <div className={contactStyles.subContainerOne}>
+          <div className={contactStyles.contactSubContainerOneCard}>
             <div
               ref={finalContactCardContentsRef1}
               className={finalContactCardContents}
@@ -190,9 +190,9 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className={contactStyle.subContainerTwo}>
-          <div className={contactStyle.contactMeContainer}>
-            <div className={contactStyle.contactMeHeaderContainer}>
+        <div className={contactStyles.subContainerTwo}>
+          <div className={contactStyles.contactMeContainer}>
+            <div className={contactStyles.contactMeHeaderContainer}>
               <h2 className={finalContactMeHeaderText}>
                 <span className={finalContactMeHeaderTextSpan}> - </span>
                 Contact Me
@@ -200,9 +200,9 @@ const Contact: React.FC = () => {
             </div>
             <form
               onSubmit={handleSubmit}
-              className={contactStyle.contactMeContainerOne}
+              className={contactStyles.contactMeContainerOne}
             >
-              <div className={contactStyle.contactMeContainerOneContents}>
+              <div className={contactStyles.contactMeContainerOneContents}>
                 <label htmlFor="full_name" className={finalContactLabel}>
                   Full Name
                 </label>
@@ -219,7 +219,7 @@ const Contact: React.FC = () => {
                   <span className="tooltip">Full Name is required</span>
                 )}
               </div>
-              <div className={contactStyle.contactMeContainerOneContents}>
+              <div className={contactStyles.contactMeContainerOneContents}>
                 <label htmlFor="email_id" className={finalContactLabel}>
                   Email
                 </label>
@@ -236,7 +236,7 @@ const Contact: React.FC = () => {
                   <span className="tooltip">Email is required</span>
                 )}
               </div>
-              <div className={contactStyle.contactMeContainerOneContents}>
+              <div className={contactStyles.contactMeContainerOneContents}>
                 <label htmlFor="subject" className={finalContactLabel}>
                   Subject
                 </label>
@@ -254,7 +254,7 @@ const Contact: React.FC = () => {
                 )}
               </div>
               <div
-                className={contactStyle.contactMeContainerOneTextareaContents}
+                className={contactStyles.contactMeContainerOneTextareaContents}
               >
                 <label htmlFor="message" className={finalContactLabel}>
                   Message
@@ -273,7 +273,7 @@ const Contact: React.FC = () => {
               {formSubmitted && !message && (
                 <span className="tooltip">Message is required</span>
               )}
-              <div className={contactStyle.contactMeContainerOneBtnContents}>
+              <div className={contactStyles.contactMeContainerOneBtnContents}>
                 <button className={finalContactMeBtn}>Send Message</button>
               </div>
             </form>
