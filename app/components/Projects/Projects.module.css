@@ -10,7 +10,6 @@
 .projectsMainContainer {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
 }
 
 .projectsSubContainerOne {
@@ -40,10 +39,12 @@
 
 .projectsSubContainerTwo {
   height: 70%;
+  width: 100%;
 }
 
 .projectsSubContainerThree {
   height: 70%;
+  width: 100%;
   border: 1px solid black;
 }
 
@@ -63,8 +64,9 @@
   background-color: transparent;
   border: 0;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
+  letter-spacing: 1.3px;
 }
 
 .projectsSubContainerMainContainer {
@@ -136,4 +138,39 @@
 
 .projectsSkillsListContainerTxt {
   font-size: 15px;
+}
+
+.projectsSubContainerThreeSubContainerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.projectsSubContainerThreeSubContainerOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.projectsSubContainerThreeSubContainerOneMain {
+  height: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iframe {
+  width: 70%;
+  height: 70%;
+  border: none;
+  border-radius: 10px;
 }

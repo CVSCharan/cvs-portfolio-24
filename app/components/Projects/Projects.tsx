@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import globalStyles from "../Styles/GlobalStyles.module.css";
 import skillsAndProjectsStyles from "./Projects.module.css";
 import Image from "next/image";
+import { miniProjects } from "./ProjectsFun";
 
 export default function Projects() {
   const themeContext = useContext(ThemeContext);
@@ -16,6 +17,12 @@ export default function Projects() {
   const Ref2 = useRef<HTMLDivElement>(null);
   const Ref3 = useRef<HTMLDivElement>(null);
   const Ref4 = useRef<HTMLDivElement>(null);
+
+  interface MiniProject {
+    id: string;
+    title: string;
+    source: string;
+  }
 
   useEffect(() => {
     const animateCardContentsBottom = (ref: React.RefObject<HTMLElement>) => {
@@ -270,6 +277,12 @@ export default function Projects() {
     setSelectedHeader(headerVal);
   };
 
+  const handleClick = (href: string) => {
+    if (href) {
+      window.open(href, "_blank");
+    }
+  };
+
   const finalProjectsHeaderText =
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtThree} ${skillsAndProjectsStyles.projectsHeaderTxt}`
@@ -317,7 +330,13 @@ export default function Projects() {
   const finalSkillsListContainerTxt =
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtFour} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`
-      : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`;
+          : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`;
+    const finalProjectsHeadings =
+      themeColor === "light"
+        ? `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`
+        : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`;
+    
+     
 
   return (
     <div
@@ -351,7 +370,7 @@ export default function Projects() {
               onClick={() => handleHeaderClick("projects")}
               className={finalSubHeaderItems}
             >
-              Projects
+              Mini-Projects
             </motion.div>
           </div>
         </div>
@@ -415,9 +434,34 @@ export default function Projects() {
 
         {selectedHeader === "projects" ? (
           <div className={skillsAndProjectsStyles.projectsSubContainerThree}>
-            <div>
-              <div>Projects Container 1</div>
-              <div>Projects Container 2</div>
+            <div
+              className={
+                skillsAndProjectsStyles.projectsSubContainerThreeSubContainerMain
+              }
+            >
+              <div
+                className={
+                  skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOne
+                }
+              >
+                {miniProjects.map((item: MiniProject, index) => (
+                  <div
+                    className={
+                      skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMain
+                    }
+                    onClick={() => handleClick(item.source)}
+                  >
+                    <h2 className={finalProjectsHeadings}>{item.title}</h2>
+                    <iframe
+                      src={item.source}
+                      title="Quiz App"
+                      className={skillsAndProjectsStyles.iframe}
+                      frameBorder="0"
+                      allowFullScreen
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         ) : null}
