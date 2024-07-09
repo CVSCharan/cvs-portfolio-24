@@ -142,27 +142,27 @@ const About: React.FC = () => {
       : `${globalStyles.darkThemeTxtThree} ${aboutStyles.aboutEduDegree}`;
   const finalAboutExpJoinedOn =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtThree} ${aboutStyles.aboutEduDegree}`
-      : `${globalStyles.darkThemeTxtThree} ${aboutStyles.aboutEduDegree}`;
+      ? `${globalStyles.lightThemeTxtFour} ${aboutStyles.aboutExpJoinedOn}`
+      : `${globalStyles.darkThemeTxtThree} ${aboutStyles.aboutExpJoinedOn}`;
   const finalAboutExpDesc =
-    themeColor === "light"
-      ? `${globalStyles.lightThemeTxtThree} ${aboutStyles.aboutExpJoinedOn}`
-      : `${globalStyles.darkThemeTxtFour} ${aboutStyles.aboutExpJoinedOn}`;
-  const finalAboutEduDesc =
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtFour} ${aboutStyles.aboutExpDesc}`
       : `${globalStyles.darkThemeTxtFour} ${aboutStyles.aboutExpDesc}`;
-  const finalAboutEduDuration =
+  const finalAboutEduDesc =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtFour} ${aboutStyles.aboutEduDuration}`
-      : `${globalStyles.darkThemeTxtFour} ${aboutStyles.aboutEduDuration}`;
-  const finalAboutCertIssued =
+      ? `${globalStyles.lightThemeTxtFour} ${aboutStyles.aboutEduDesc}`
+      : `${globalStyles.darkThemeTxtFour} ${aboutStyles.aboutEduDesc}`;
+  const finalAboutEduDuration =
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtThree} ${aboutStyles.aboutEduDuration}`
       : `${globalStyles.darkThemeTxtThree} ${aboutStyles.aboutEduDuration}`;
+  const finalAboutCertIssued =
+    themeColor === "light"
+      ? `${globalStyles.lightThemeTxtThree} ${aboutStyles.aboutCertIssued}`
+      : `${globalStyles.darkThemeTxtThree} ${aboutStyles.aboutCertIssued}`;
   const finalAboutExpLoc =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtThree} ${aboutStyles.aboutCertIssuedOn}`
+      ? `${globalStyles.lightThemeTxtFour} ${aboutStyles.aboutCertIssuedOn}`
       : `${globalStyles.darkThemeTxtFour} ${aboutStyles.aboutCertIssuedOn}`;
   const finalAboutEduGrade =
     themeColor === "light"
@@ -265,8 +265,8 @@ const About: React.FC = () => {
                 }
               >
                 <Image
-                  height={300}
-                  width={300}
+                  height={600}
+                  width={600}
                   className={aboutStyles.aboutCertificateImg}
                   src={item.certificate_img}
                   alt="certificates card img"
@@ -277,7 +277,6 @@ const About: React.FC = () => {
                   aboutStyles.aboutCertificatesCardsSubContainerContentTwo
                 }
               >
-                <h2 className={finalAboutCertName}>{item.certificate_name}</h2>
                 <Image
                   height={300}
                   width={300}
@@ -285,6 +284,7 @@ const About: React.FC = () => {
                   src={item.institution_logo}
                   alt="certificates card"
                 />
+                <h2 className={finalAboutCertName}>{item.certificate_name}</h2>
                 <p className={finalAboutCertInst}>{item.institution}</p>
                 <p className={finalAboutCertIssued}>
                   Issued - {item.issues_on}
@@ -425,54 +425,50 @@ const About: React.FC = () => {
 
   const renderEducation = () => {
     return (
-      <div className={aboutStyles.aboutEducationCardsContainer}>
-        <AnimatePresence mode="wait">
-          {univData.map((item, itemInd) => (
-            <motion.div
-              initial={{
-                x: itemInd % 2 === 0 ? 15 : -15,
-                opacity: 0,
-              }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.7, delay: itemInd * 0.5 }}
-              style={{
-                backgroundImage: `url(/assets/Images/card-3.svg)`,
-              }}
-              className={finalAboutEduContainer}
-              key={itemInd}
-            >
-              <div className={aboutStyles.aboutEducationCardsSubMain}>
-                <div
-                  className={
-                    aboutStyles.aboutEducationCardsSubContainerContentOne
-                  }
-                >
-                  <Image
-                    height={300}
-                    width={300}
-                    className={aboutStyles.aboutEducationIcon}
-                    src={item.institution_logo}
-                    alt="org card"
-                  />
-                </div>
-                <div
-                  className={
-                    aboutStyles.aboutEducationCardsSubContainerContentTwo
-                  }
-                >
-                  <h2 className={finalAboutEduOrg}>{item.institute}</h2>
-                  <p className={finalAboutEduDegree}>{item.degree}</p>
-                  <p className={finalAboutEduDuration}>
-                    {item.course_duration}
-                  </p>
-                  <p className={finalAboutEduGrade}>{item.grade}</p>
-                </div>
+      <AnimatePresence mode="wait">
+        {univData.map((item, itemInd) => (
+          <motion.div
+            initial={{
+              x: itemInd % 2 === 0 ? 15 : -15,
+              opacity: 0,
+            }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: itemInd * 0.5 }}
+            style={{
+              backgroundImage: `url(/assets/Images/card-3.svg)`,
+            }}
+            className={finalAboutEduContainer}
+            key={itemInd}
+          >
+            <div className={aboutStyles.aboutEducationCardsSubMain}>
+              <div
+                className={
+                  aboutStyles.aboutEducationCardsSubContainerContentOne
+                }
+              >
+                <Image
+                  height={300}
+                  width={300}
+                  className={aboutStyles.aboutEducationIcon}
+                  src={item.institution_logo}
+                  alt="org card"
+                />
               </div>
-              <p className={finalAboutEduDesc}>{item.description}</p>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
+              <div
+                className={
+                  aboutStyles.aboutEducationCardsSubContainerContentTwo
+                }
+              >
+                <h2 className={finalAboutEduOrg}>{item.institute}</h2>
+                <p className={finalAboutEduDegree}>{item.degree}</p>
+                <p className={finalAboutEduDuration}>{item.course_duration}</p>
+                <p className={finalAboutEduGrade}>{item.grade}</p>
+              </div>
+            </div>
+            <p className={finalAboutEduDesc}>{item.description}</p>
+          </motion.div>
+        ))}
+      </AnimatePresence>
     );
   };
 
@@ -499,7 +495,9 @@ const About: React.FC = () => {
         )}
         {subHeader === "edu" && (
           <div className={aboutStyles.aboutSubContainerThree}>
-            {renderEducation()}
+            <div className={aboutStyles.aboutEducationCardsContainer}>
+              {renderEducation()}
+            </div>
           </div>
         )}
         {subHeader === "cert" && (

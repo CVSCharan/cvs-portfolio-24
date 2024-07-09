@@ -27,6 +27,8 @@
 
 .aboutHeaderTextTwo {
   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
 .aboutExpRole {
@@ -45,7 +47,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   border-radius: 70px;
   border: 2px solid;
 }
@@ -56,6 +58,7 @@
   font-size: 19px;
   font-weight: 350;
   cursor: pointer;
+  letter-spacing: 1.5px;
 }
 
 .aboutSubHeaderMain {
@@ -102,14 +105,6 @@
   gap: 7px;
 }
 
-.aboutEducationCardsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 95%;
-  height: 80%;
-}
-
 .aboutExperienceCardsSubContainer {
   height: 77%;
   display: flex;
@@ -126,9 +121,9 @@
 .aboutExperienceCardsSubContainerContents {
   display: flex;
   flex-direction: row;
-  height: 35%;
+  height: 45%;
   width: 95%;
-  gap: 10px;
+  gap: 30px;
 }
 
 .aboutCertificatesMainContainer {
@@ -188,12 +183,12 @@
 }
 
 .aboutExperienceCardsSubContainerContentTwo {
-  height: 100%;
+  height: 70%;
   width: 83%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 15px;
 }
 
 .aboutCertificatesCardsSubContainerContentTwo {
@@ -211,7 +206,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  gap: 12px;
+  gap: 22px;
   margin-left: 17px;
 }
 
@@ -233,8 +228,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 95%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .aboutEducationCardsSubContainer {
@@ -245,9 +240,9 @@
   border-bottom: 1.5px solid;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 32%;
+  width: 31%;
   background-size: cover;
-  padding: 0 17px;
+  padding: 0 15px;
 }
 
 .aboutCertificatesCardsSubContainer {
@@ -322,7 +317,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .aboutCertCredMainContainer {
@@ -345,6 +340,14 @@
   letter-spacing: 1.2px;
 }
 
+.aboutEducationCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 80%;
+}
+
 .aboutExpLocation {
   font-size: 13px;
   font-weight: 600;
@@ -352,6 +355,15 @@
 
 .aboutCertName {
   font-size: 14px;
+}
+
+.aboutEduDesc {
+  font-size: 13px;
+  font-weight: 400;
+  height: 30%;
+  width: 97%;
+  text-align: justify;
+  letter-spacing: 1.2px;
 }
 
 .aboutExpOrg {
@@ -402,4 +414,1161 @@
 .aboutCertCred {
   font-size: 12px;
   font-weight: 800;
+}
+
+/* For small screens (up to 320px) */
+@media (max-width: 320px) {
+  .aboutSubHeader {
+    height: 70%;
+    width: 100% !important;
+    gap: 30px;
+  }
+
+  .aboutSubHeaderItems {
+    font-size: 10px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+  }
+
+  .aboutExpRole {
+    font-size: 10px;
+  }
+
+  .aboutExpOrg {
+    font-size: 9px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 8px;
+    display: none;
+  }
+
+  .aboutExpDesc {
+    font-size: 8px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 9px;
+    font-weight: 400;
+    display: none;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: cover;
+    padding: 15px;
+    gap: 2px;
+  }
+
+  .aboutExperienceCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .aboutEducationCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .aboutEducationIcon {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    background-size: cover;
+    padding: 0 10px;
+    padding-top: 13px;
+    gap: 7px;
+  }
+
+  .aboutEduOrg {
+    font-size: 10px;
+  }
+
+  .aboutEduDegree {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 8px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEduGrade {
+    font-size: 8px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .aboutEduDesc {
+    font-size: 9px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 7px;
+  }
+
+  .aboutCertificateImg {
+    height: 65%;
+    width: 90%;
+  }
+
+  .aboutCertificateIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 10px;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+
+  .aboutCertificatesMainContainer {
+    height: 95%;
+    width: 100%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentOne {
+    width: 100%;
+    height: 30%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentTwo {
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+  }
+
+  .aboutCertName {
+    font-size: 13px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+/* For small screens (up to 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+  .aboutSubHeader {
+    height: 70%;
+    width: 80% !important;
+    gap: 30px;
+  }
+
+  .aboutSubHeaderItems {
+    font-size: 10px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+  }
+
+  .aboutExpRole {
+    font-size: 12px;
+  }
+
+  .aboutExpOrg {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 9px;
+    display: none;
+  }
+
+  .aboutExpDesc {
+    font-size: 8.5px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 9px;
+    font-weight: 400;
+    display: none;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: cover;
+    padding: 15px;
+    gap: 3px;
+  }
+
+  .aboutExperienceCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .aboutEducationCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .aboutEducationIcon {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    background-size: cover;
+    padding: 0 15px;
+    padding-top: 13px;
+    gap: 10px;
+  }
+
+  .aboutEduOrg {
+    font-size: 13px;
+  }
+
+  .aboutEduDegree {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 9px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEduGrade {
+    font-size: 9px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .aboutEduDesc {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 10px;
+  }
+
+  .aboutCertificateImg {
+    height: 65%;
+    width: 90%;
+  }
+
+  .aboutCertificateIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 10px;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+
+  .aboutCertificatesMainContainer {
+    height: 95%;
+    width: 100%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentOne {
+    width: 100%;
+    height: 30%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentTwo {
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+  }
+
+  .aboutCertName {
+    font-size: 13px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+/* For small screens (up to 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+  .aboutSubHeader {
+    height: 70%;
+    width: 80% !important;
+    gap: 30px;
+  }
+
+  .aboutSubHeaderItems {
+    font-size: 10px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+  }
+
+  .aboutExpRole {
+    font-size: 13px;
+  }
+
+  .aboutExpOrg {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 9px;
+    display: none;
+  }
+
+  .aboutExpDesc {
+    font-size: 9.5px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 9px;
+    font-weight: 400;
+    display: none;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: cover;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .aboutExperienceCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .aboutEducationCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .aboutEducationIcon {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 32%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    background-size: cover;
+    padding: 0 10px;
+    padding-top: 13px;
+    gap: 7px;
+  }
+
+  .aboutEduOrg {
+    font-size: 10px;
+  }
+
+  .aboutEduDegree {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 8px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEduGrade {
+    font-size: 8px;
+    font-weight: 500;
+    display: none;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .aboutEduDesc {
+    font-size: 9px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 7px;
+  }
+
+  .aboutCertificateImg {
+    height: 65%;
+    width: 90%;
+  }
+
+  .aboutCertificateIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 10px;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+
+  .aboutCertificatesMainContainer {
+    height: 95%;
+    width: 100%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentOne {
+    width: 100%;
+    height: 30%;
+  }
+
+  .aboutCertificatesCardsSubContainerContentTwo {
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+  }
+
+  .aboutCertName {
+    font-size: 15px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 17px;
+    width: 17px;
+  }
+}
+
+/* For medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .aboutSubHeaderItems {
+    font-size: 13px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+  }
+
+  .aboutExpRole {
+    font-size: 13px;
+  }
+
+  .aboutExpOrg {
+    font-size: 9px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 9px;
+  }
+
+  .aboutExpDesc {
+    font-size: 9px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 8px;
+    font-weight: 400;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 77%;
+    justify-content: flex-start;
+    width: 32%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-size: 100% 100%;
+    padding: 0 15px;
+    padding-top: 30px;
+    gap: 15px;
+  }
+
+  .aboutEducationIcon {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 100%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 32%;
+    background-size: 100% 100%;
+    padding: 0 20px;
+    padding-top: 30px;
+    gap: 15px;
+  }
+
+  .aboutEduOrg {
+    font-size: 13px;
+  }
+
+  .aboutEduDegree {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutEduGrade {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .aboutEduDesc {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 12px;
+  }
+
+  .aboutCertificateImg {
+    height: 65%;
+    width: 90%;
+  }
+
+  .aboutCertificateIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 15px;
+  }
+
+  .aboutCertName {
+    font-size: 15px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 17px;
+    width: 17px;
+  }
+}
+
+/* For large screens (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .aboutSubHeaderItems {
+    font-size: 18px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+  }
+
+  .aboutExpRole {
+    font-size: 14px;
+  }
+
+  .aboutExpOrg {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 12px;
+  }
+
+  .aboutExpDesc {
+    font-size: 12px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 77%;
+    justify-content: flex-start;
+    width: 32%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-size: 100% 100%;
+    padding: 0 30px;
+    padding-top: 20px;
+    gap: 10px;
+  }
+
+  .aboutEducationIcon {
+    height: 55px;
+    width: 55px;
+    padding: 7px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 100%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 32%;
+    background-size: 100% 100%;
+    padding: 0 20px;
+    padding-top: 20px;
+    gap: 10px;
+  }
+
+  .aboutEduOrg {
+    font-size: 16px;
+  }
+
+  .aboutEduDegree {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .aboutEduGrade {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .aboutEduDesc {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 12px;
+  }
+
+  .aboutCertificateImg {
+    height: 85%;
+    width: 95%;
+  }
+
+  .aboutCertificateIcon {
+    height: 55px;
+    width: 55px;
+    border-radius: 15px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 20px;
+  }
+
+  .aboutCertName {
+    font-size: 17px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* For extra large screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 2559px) {
+  .aboutSubHeaderItems {
+    font-size: 22px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 55px;
+    width: 55px;
+  }
+
+  .aboutExpRole {
+    font-size: 20px;
+  }
+
+  .aboutExpOrg {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 16px;
+  }
+
+  .aboutExpDesc {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 77%;
+    justify-content: flex-start;
+    width: 32%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-size: 100% 100%;
+    padding: 0 20px;
+    padding-top: 25px;
+    gap: 10px;
+  }
+
+  .aboutEducationIcon {
+    height: 55px;
+    width: 55px;
+    padding: 7px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 100%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 32%;
+    background-size: 100% 100%;
+    padding: 0 25px;
+    padding-top: 40px;
+    gap: 15px;
+  }
+
+  .aboutEduOrg {
+    font-size: 18px;
+  }
+
+  .aboutEduDegree {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .aboutEduGrade {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .aboutEduDesc {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .aboutEducationCardsSubContainerContentTwo {
+    gap: 15px;
+  }
+
+  .aboutCertificateImg {
+    height: 85%;
+    width: 95%;
+  }
+
+  .aboutCertificateIcon {
+    height: 55px;
+    width: 55px;
+    border-radius: 15px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 25px;
+  }
+
+  .aboutCertName {
+    font-size: 18px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* For very large screens (2560px and above) */
+@media (min-width: 2560px) {
+  .aboutSubHeaderItems {
+    font-size: 35px;
+  }
+
+  .aboutHeaderTextTwo {
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutExperienceIcon {
+    height: 115px;
+    width: 115px;
+  }
+
+  .aboutExpRole {
+    font-size: 36px;
+  }
+
+  .aboutExpOrg {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .aboutExpJoinedOn {
+    font-size: 30px;
+  }
+
+  .aboutExpDesc {
+    font-size: 30px;
+  }
+
+  .aboutCertIssuedOn {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .aboutExperienceCardsSubContainer {
+    height: 77%;
+    justify-content: flex-start;
+    width: 32%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-size: 100% 100%;
+    padding: 0 30px;
+    padding-top: 120px;
+  }
+
+  .aboutEducationIcon {
+    height: 115px;
+    width: 115px;
+    padding: 7px;
+  }
+
+  .aboutEducationCardsSubContainer {
+    height: 100%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    width: 32%;
+    background-size: 100% 100%;
+    padding: 0 35px;
+    padding-top: 120px;
+    gap: 50px;
+  }
+
+  .aboutEduOrg {
+    font-size: 38px;
+  }
+
+  .aboutEduDegree {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutEduDuration {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutEduGrade {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutEducationCardsSubMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .aboutEduDesc {
+    font-size: 33px;
+    font-weight: 400;
+  }
+
+  .aboutCertificateImg {
+    height: 85%;
+    width: 95%;
+  }
+
+  .aboutCertificateIcon {
+    height: 115px;
+    width: 115px;
+    border-radius: 15px;
+  }
+
+  .aboutCertificatesCardsSubContainer {
+    gap: 30px;
+  }
+
+  .aboutCertName {
+    font-size: 37px;
+  }
+
+  .aboutCertInstitution {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutCertIssued {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutCertCred {
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .aboutCertificateLinkIcon {
+    height: 60px;
+    width: 60px;
+  }
 }
