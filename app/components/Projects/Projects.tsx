@@ -444,6 +444,7 @@ export default function Projects() {
               >
                 {miniProjects.map((item: MiniProject, index) => (
                   <div
+                    key={index}
                     className={
                       skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMain
                     }
