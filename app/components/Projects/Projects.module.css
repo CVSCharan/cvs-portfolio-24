@@ -1,0 +1,139 @@
+.projectsMainDiv {
+  height: 90vh;
+  width: 100vw;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsMainContainer {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.projectsSubContainerOne {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsHeaderTxt {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.projectsHeaderTxtSpan {
+  font-size: 22px;
+}
+
+.projectsSubHeaderMain {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsSubContainerTwo {
+  height: 70%;
+}
+
+.projectsSubContainerThree {
+  height: 70%;
+  border: 1px solid black;
+}
+
+.projectsSubHeader {
+  height: 70%;
+  width: 50% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 70px;
+  border: 2px solid;
+}
+
+.projectsSubHeaderItems {
+  background-color: transparent;
+  border: 0;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.projectsSubContainerMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  gap: 30px;
+}
+
+.projectsSubContainerSubContainerOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15%;
+  width: 35%;
+  border: 1.5px solid;
+  border-radius: 70px;
+  flex-wrap: wrap;
+}
+
+.projectsSubContainerSubContainerTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75%;
+  width: 90%;
+  border: 1.5px solid;
+  border-radius: 7px;
+  flex-wrap: wrap;
+}
+
+.projectsSkillsHeaderListContainer {
+  width: 20%;
+  height: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.projectsSkillsHeaderListContainerItems {
+  font-size: 14px;
+}
+
+.projectsSkillsListIcon {
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.projectsSkillsListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid;
+  gap: 20px;
+  width: 23%;
+  height: 20%;
+  border-radius: 7px;
+}
+
+.projectsSkillsListContainerTxt {
+  font-size: 15px;
+}
