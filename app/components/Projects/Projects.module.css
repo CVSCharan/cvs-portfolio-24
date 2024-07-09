@@ -45,7 +45,6 @@
 .projectsSubContainerThree {
   height: 70%;
   width: 100%;
-  border: 1px solid black;
 }
 
 .projectsSubHeader {
@@ -173,4 +172,343 @@
   height: 70%;
   border: none;
   border-radius: 10px;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.iframe:hover {
+  width: 80%;
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+}
+
+.projectsSubContainerThreeSubContainerOneMainHeading {
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.projectsSubContainerThreeSubContainerOneMainHeading:hover {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/* For small screens (up to 320px) */
+@media (max-width: 320px) {
+  .projectsSkillsListContainer {
+    gap: 5px;
+    width: 30%;
+    height: 20%;
+  }
+
+  .projectsSkillsHeaderListContainer {
+    width: 60%;
+    height: 22%;
+  }
+
+  .projectsHeaderTxt {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 20px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 9px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 9px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 15px;
+    width: 15px;
+    padding: 3px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 9px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 9px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+/* For small screens (up to 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+  .projectsSkillsListContainer {
+    gap: 10px;
+    width: 30%;
+    height: 20%;
+  }
+
+  .projectsSkillsHeaderListContainer {
+    width: 60%;
+    height: 22%;
+  }
+
+  .projectsHeaderTxt {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 20px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 11px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 11px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 11px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+/* For small screens (up to 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+  .projectsSkillsListContainer {
+    gap: 10px;
+    width: 30%;
+    height: 20%;
+  }
+
+  .projectsSkillsHeaderListContainer {
+    width: 60%;
+    height: 22%;
+  }
+
+  .projectsHeaderTxt {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 20px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 11px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 11px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 11px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+/* For medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .projectsHeaderTxt {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 20px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 13px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 13px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 25px;
+    width: 25px;
+    padding: 7px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 13px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+/* For large screens (901px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .projectsHeaderTxt {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 22px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 15px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 15px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 15px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+/* For extra large screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 2559px) {
+  .projectsHeaderTxt {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 22px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 18px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 18px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 18px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+/* For very large screens (2560px and above) */
+@media (min-width: 2560px) {
+  .projectsHeaderTxt {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .projectsHeaderTxtSpan {
+    font-size: 42px;
+  }
+
+  .projectsSubHeaderItems {
+    font-size: 39px;
+  }
+
+  .projectsSkillsHeaderListContainerItems {
+    font-size: 34px;
+  }
+
+  .projectsSkillsListIcon {
+    height: 80px;
+    width: 80px;
+    padding: 7px;
+  }
+
+  .projectsSkillsListContainerTxt {
+    font-size: 35px;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading {
+    font-size: 30px;
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+  .projectsSubContainerThreeSubContainerOneMainHeading:hover {
+    font-size: 36px;
+    font-weight: 500;
+  }
 }

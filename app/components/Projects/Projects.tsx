@@ -330,13 +330,11 @@ export default function Projects() {
   const finalSkillsListContainerTxt =
     themeColor === "light"
       ? `${globalStyles.lightThemeTxtFour} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`
-          : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`;
-    const finalProjectsHeadings =
-      themeColor === "light"
-        ? `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`
-        : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`;
-    
-     
+      : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`;
+  const finalProjectsHeadings =
+    themeColor === "light"
+      ? `${globalStyles.darkThemeTxtTwo} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`
+      : `${globalStyles.darkThemeTxtTwo} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`;
 
   return (
     <div

@@ -15,9 +15,9 @@
 
 /* For small screens (up to 320px) */
 @media (max-width: 320px) {
-}
-.footerTxt {
-  font-size: 11px;
+  .footerTxt {
+    font-size: 11px;
+  }
 }
 
 /* For small screens (up to 375px) */
