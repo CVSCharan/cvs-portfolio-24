@@ -160,13 +160,13 @@ const LandingPage: React.FC = () => {
 
   const finalHeaderTextSpan =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtOne} ${landingPageStyle.headerTxtSpan}`
-      : `${globalStyles.darkThemeTxtOne} ${landingPageStyle.headerTxtSpan}`;
+      ? `${globalStyles.lightThemeTxtOne} ${landingPageStyle.headerTextSpan}`
+      : `${globalStyles.darkThemeTxtOne} ${landingPageStyle.headerTextSpan}`;
 
   const finalHeaderText =
     themeColor === "light"
-      ? `${globalStyles.lightThemeTxtThree} ${landingPageStyle.headerTxt}`
-      : `${globalStyles.darkThemeTxtThree} ${landingPageStyle.headerTxt}`;
+      ? `${globalStyles.lightThemeTxtThree} ${landingPageStyle.headerText}`
+      : `${globalStyles.darkThemeTxtThree} ${landingPageStyle.headerText}`;
 
   const finalParaSpan =
     themeColor === "light"
@@ -262,7 +262,9 @@ const LandingPage: React.FC = () => {
             className={finalResumeBtn}
           >
             RESUME
-            <FileDownloadOutlinedIcon className="home-resume-download-icon" />
+            <FileDownloadOutlinedIcon
+              className={landingPageStyle.homeResumeDownloadIcon}
+            />
           </motion.button>
         </div>
         <div ref={Ref2} className={landingPageStyle.sectionTwoSecondDiv}>

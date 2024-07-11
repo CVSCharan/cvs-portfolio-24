@@ -22,7 +22,8 @@ const miniProjects = [
   {
     id: "5",
     title: "Snake Game",
-    source: "https://gentle-donut-0cbb71.netlify.app/projects/snake-mania",
+    source:
+      "https://cvs-portfolio-v01-n0eirgbrh-cvs-charans-projects.vercel.app/projects/snake-mania",
   },
   {
     id: "6",

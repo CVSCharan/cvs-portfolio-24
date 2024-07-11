@@ -61,7 +61,7 @@ export default function Projects() {
 
     animateCardContentsBottom(Ref1);
     animateCardContentsTop(Ref4);
-  }, [location, selectedHeader]);
+  }, [selectedHeader]);
 
   const skillsHeaderList = [
     { id: "frontend", title: "Frontend" },
@@ -333,7 +333,7 @@ export default function Projects() {
       : `${globalStyles.darkThemeTxtThree} ${skillsAndProjectsStyles.projectsSkillsListContainerTxt}`;
   const finalProjectsHeadings =
     themeColor === "light"
-      ? `${globalStyles.darkThemeTxtTwo} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`
+      ? `${globalStyles.lightThemeTxtTwo} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`
       : `${globalStyles.darkThemeTxtTwo} ${skillsAndProjectsStyles.projectsSubContainerThreeSubContainerOneMainHeading}`;
 
   return (

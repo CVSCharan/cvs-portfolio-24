@@ -78,7 +78,7 @@
 .headerText {
   letter-spacing: 1.5px;
   font-size: 27px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .headerTextSpan {
@@ -142,6 +142,26 @@
   font-size: 22px;
   letter-spacing: 1.7px;
   font-weight: 600;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.homeResumeDownloadIcon {
+  animation: bounce 2s infinite;
 }
 
 /* For small screens (up to 320px) */
@@ -444,6 +464,7 @@
 
   .paraTxt {
     font-size: 15px;
+    font-weight: 500;
   }
 
   .profilePic {
@@ -461,6 +482,7 @@
     height: 30px;
     width: 150px;
     font-size: 17px;
+    font-weight: 500;
   }
 
   .qrDiv {
@@ -489,6 +511,7 @@
 
   .paraTxt {
     font-size: 18px;
+    font-weight: 500;
   }
 
   .profilePic {
@@ -506,6 +529,7 @@
     height: 44px;
     width: 150px;
     font-size: 20px;
+    font-weight: 500;
   }
 
   .qrDiv {
@@ -534,6 +558,7 @@
 
   .paraTxt {
     font-size: 40px;
+    font-weight: 500;
   }
 
   .profilePic {
@@ -551,6 +576,7 @@
     height: 70px;
     width: 370px;
     font-size: 40px;
+    font-weight: 500;
   }
 
   .qrDiv {
