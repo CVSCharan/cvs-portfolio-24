@@ -14,7 +14,8 @@ import { notification } from "antd";
 
 const LandingPage: React.FC = () => {
   const [typedText, setTypedText] = useState<string>("");
-  const resumeURL = "https://cvs-charan-resume.tiiny.site/";
+  const resumeURLQR = "https://moccasin-maybelle-88.tiiny.site/";
+  const resumeURL = `https://moccasin-maybelle-88.tiiny.site/`;
   const fullText = ["CVS CHARAN"];
   const [qrCodeSVG, setQrCodeSVG] = useState("");
   const typingSpeed = 170; // Speed of typing and deletion
@@ -127,7 +128,7 @@ const LandingPage: React.FC = () => {
     if (!themeColor) return;
 
     const qr = QRCode(0, "L");
-    qr.addData(resumeURL);
+    qr.addData(resumeURLQR);
     qr.make();
     const svg = qr.createSvgTag({ cellSize: 3.5 });
     const modifiedSvg =
@@ -139,18 +140,11 @@ const LandingPage: React.FC = () => {
 
   const download = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    Axios({
-      url: "https://my-portfolio-24-server-2cf37196a6ea.herokuapp.com/resume-service",
-      method: "GET",
-      responseType: "blob",
-    }).then((response) => {
-      console.log(response);
-      FileDownload(response.data, "Charan_Resume.pdf");
-      notification.success({
-        message: "Success",
-        description: "Resume Downloaded",
-        placement: "bottomRight",
-      });
+    window.open(resumeURL, "_blank");
+    notification.success({
+      message: "Success",
+      description: "Resume Downloaded",
+      placement: "bottomRight",
     });
   };
 
