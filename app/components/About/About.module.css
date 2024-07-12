@@ -333,11 +333,12 @@
 
 .aboutExpDesc {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: justify;
   height: 40%;
   width: 100%;
   letter-spacing: 1.2px;
+  margin-top: 17px;
 }
 
 .aboutEducationCardsContainer {
@@ -360,8 +361,8 @@
 .aboutEduDesc {
   font-size: 13px;
   font-weight: 400;
-  height: 30%;
-  width: 97%;
+  height: 35%;
+  width: 100%;
   text-align: justify;
   letter-spacing: 1.2px;
   margin-top: 7px;
@@ -387,15 +388,6 @@
   font-weight: 400;
   text-align: justify;
   letter-spacing: 1.2px;
-}
-
-.aboutExpDesc {
-  font-size: 13px;
-  font-weight: 600;
-  text-align: justify;
-  height: 30%;
-  width: 92%;
-  margin-top: 17px;
 }
 
 .aboutEduDuration {
@@ -458,6 +450,7 @@
 
   .aboutExpDesc {
     font-size: 8px;
+    margin-top: 12px;
   }
 
   .aboutCertIssuedOn {
@@ -547,6 +540,7 @@
   .aboutEduDesc {
     font-size: 9px;
     font-weight: 400;
+    margin-top: 2px;
   }
 
   .aboutEducationCardsSubContainerContentTwo {
@@ -651,6 +645,7 @@
 
   .aboutExpDesc {
     font-size: 8.5px;
+    margin-top: 12px;
   }
 
   .aboutCertIssuedOn {
@@ -740,6 +735,7 @@
   .aboutEduDesc {
     font-size: 10px;
     font-weight: 400;
+    margin-top: 1.5px;
   }
 
   .aboutEducationCardsSubContainerContentTwo {
@@ -844,6 +840,7 @@
 
   .aboutExpDesc {
     font-size: 9.5px;
+    margin-top: 10px;
   }
 
   .aboutCertIssuedOn {
