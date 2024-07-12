@@ -26,7 +26,7 @@ interface UniversityData {
   institution_logo: string;
   degree: string;
   grade: string;
-  description: string;
+  description: string[];
 }
 
 interface OrganizationData {
@@ -37,7 +37,7 @@ interface OrganizationData {
   location: string;
   role_type: string;
   logo_src: string;
-  description: string;
+  description: string[];
 }
 
 const About: React.FC = () => {
@@ -416,7 +416,13 @@ const About: React.FC = () => {
                 <p className={finalAboutExpLoc}>{org.location}</p>
               </div>
             </div>
-            <h2 className={finalAboutExpDesc}>{org.description}</h2>
+            <div>
+              {org.description.map((desc, descInd) => (
+                <p className={finalAboutExpDesc} key={descInd}>
+                  {desc}
+                </p>
+              ))}
+            </div>
           </motion.div>
         ))}
       </AnimatePresence>
@@ -465,7 +471,13 @@ const About: React.FC = () => {
                 <p className={finalAboutEduGrade}>{item.grade}</p>
               </div>
             </div>
-            <p className={finalAboutEduDesc}>{item.description}</p>
+            <div>
+              {item.description.map((desc, descInd) => (
+                <p className={finalAboutEduDesc} key={descInd}>
+                  {desc}
+                </p>
+              ))}
+            </div>
           </motion.div>
         ))}
       </AnimatePresence>
